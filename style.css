@@ -1,0 +1,54 @@
+html {
+  font-family: "Helevetica", sans-serif;
+}
+
+#padding {
+  padding-bottom: 30px;
+}
+
+body {
+  color: #333;
+  font-weight: 100;
+  max-width: 75em;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+}
+
+div:focus {
+  outline: none;
+}
+
+
+
+#heading {
+  font-size: 48px;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+  background-color: blue;
+  opacity: .9;
+}
+
+#content {
+  padding-top: 10px;
+  font-size: 24px;
+  border: 2px solid black;
+  border-top: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5vh;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 5vh;
+}
