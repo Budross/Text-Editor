@@ -1,16 +1,58 @@
 <html>
 	<head>
+	  <meta charset="UTF-8">
 	  <title>Text Editor</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="style.css"/>
 	</head>
 	<div id="padding"> </div>
 	<body>
-		 <div id="heading" contenteditable="true"></div>
-		 <div id="content" contenteditable="true"></div>
-		 
-		 <div class="footer"><p>Footer</p></div>
+		<!-- Sidebar -->
+		<div id="sidebar" class="sidebar">
+		<div class="sidebar-header">
+			<h2>Documents</h2>
+			<button id="new-doc-btn" class="new-doc-btn" title="Create New Document">+</button>
+		</div>
+		<div class="sidebar-content">
+			<div id="document-list" class="document-list">
+			<!-- Document items will be dynamically inserted here -->
+			</div>
+			
+		</div>
+		</div>
+
+		<!-- Main Content Area -->
+		<div id="main-content" class="main-content">
+		<div id="heading" contenteditable="true"></div>
+		<div id="content" contenteditable="true"></div>
+		</div>
+
+
 	</body>
+
+	<footer id="options-list" class="footer">
+		<div class="options-container">
+			<div class="option-group">
+				<label for="font-size">Text Size:</label>
+				<select id="font-size" class="control">
+					<option value="16">Small</option>
+					<option value="24" selected>Medium</option>
+					<option value="32">Large</option>
+				</select>
+			</div>
+
+			<div class="option-group">
+				<button id="bold-btn" class="control toggle-btn" title="Toggle Bold">B</button>
+				<button id="italic-btn" class="control toggle-btn" title="Toggle Italic">I</button>
+			</div>
+
+			<div class="option-group">
+				<label for="header-color">Header Color:</label>
+				<input type="color" id="header-color" class="control color-picker" value="#5b7c99">
+			</div>
+		</div>
+	</footer>
+
 	<script src="app.js"></script>
 
   </html>
