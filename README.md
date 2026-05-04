@@ -1,6 +1,7 @@
 # Text Editor
 
 A lightweight, "no-framework" vanilla JavaScript web application for creating, managing, and formatting text documents. This project focuses on simplicity, data persistence via Local Storage, and a clean, responsive user interface.
+Try it out at budross.github.io/Text-Editor
 
 ## Features
 
@@ -31,7 +32,6 @@ A lightweight, "no-framework" vanilla JavaScript web application for creating, m
 ### Implementation Highlights
 - **State Management**: Maintains a global state for the current document ID, document list, and formatting flags.
 - **Color Utilities**: Includes helper functions for HEX, RGB, and HSL conversions to facilitate dynamic theme generation.
-- **Data Migration**: Automatically migrates data from older single-document versions of the editor to the new multi-document format.
 
 ## Getting Started
 
