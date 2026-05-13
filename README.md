@@ -1,4 +1,4 @@
-# Text Editor
+# Text Editor - A browser based notepad
 
 A lightweight, vanilla JavaScript web application for creating, managing, and formatting text documents. This project focuses on simplicity, data persistence via Local Storage, and a clean, responsive user interface.
 Try it out at budross.github.io/Text-Editor
