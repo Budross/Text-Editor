@@ -29,10 +29,6 @@ Try it out at budross.github.io/Text-Editor
 - **Vanilla JavaScript**: All logic is handled without third-party frameworks or libraries.
 - **Web Storage API**: Utilizes `localStorage` for persistent data storage across sessions.
 
-### Implementation Highlights
-- **State Management**: Maintains a global state for the current document ID, document list, and formatting flags.
-- **Color Utilities**: Includes helper functions for HEX, RGB, and HSL conversions to facilitate dynamic theme generation.
-
 ## Getting Started
 
 1.  Clone or download the repository.
