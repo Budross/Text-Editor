@@ -242,6 +242,20 @@ function setupEventListeners() {
     toggleFormatting('italic');
   });
 
+  document.getElementById('hr-btn').addEventListener('click', () => {
+    document.execCommand('insertHorizontalRule', false, null);
+  });
+  
+  document.getElementById('clear-btn').addEventListener('mousedown', (e) => {
+    // 1. Prevent the button click from stealing focus from the text editor
+    e.preventDefault(); 
+    
+    // 2. Strip standard formatting (bold, italic, underline) and inline styles from the active selection
+    document.execCommand('removeFormat', false, null);
+    
+    // 3. Force the UI toggle buttons to recognize the formatting has been removed
+    syncFormattingState(); 
+  });  
   // Header color picker
   const colorPicker = document.getElementById('header-color');
   colorPicker.addEventListener('input', (e) => changeHeaderColor(e.target.value));
