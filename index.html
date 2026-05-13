@@ -23,8 +23,8 @@
 
 		<!-- Main Content Area -->
 		<div id="main-content" class="main-content">
-		<div id="heading" contenteditable="true"></div>
-		<div id="content" contenteditable="true"></div>
+			<div id="heading" contenteditable="true"></div>
+			<div id="content" contenteditable="true"></div>
 		</div>
 
 
@@ -40,6 +40,17 @@
 					<option value="32">Large</option>
 				</select>
 			</div>
+			
+			<div class="option-group">
+				<label for="content-width">Page Width:</label>
+				<select id="content-width" class="control">
+					<option value="50em">Narrow</option>
+					<option value="75em" selected>Normal</option>
+					<option value="100em">Wide</option>
+					<option value="80%">Full Width</option>
+				</select>
+			</div>
+
 
 			<div class="option-group">
 				<button id="bold-btn" class="control toggle-btn" title="Toggle Bold">B</button>

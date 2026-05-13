@@ -15,9 +15,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Content Width Variable */
+
+
 /* Main Content Wrapper */
 .main-content {
-  max-width: 75em;
+  --contentWidth: 75em; /* Default content width */
+  max-width: var(--contentWidth);
   margin: 0 auto;
   transform: translateX(125px); /* Shift right by half sidebar width (250px / 2) to center */
 }

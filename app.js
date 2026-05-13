@@ -255,6 +255,15 @@ function setupEventListeners() {
     }
   });
 
+  document.getElementById('content-width').addEventListener('change', (e) => {
+    const width = e.target.value;
+    document.querySelector('.main-content').style.setProperty('--contentWidth', width);
+    // Persist to local storage
+    localStorage.setItem('contentWidth', width);
+  });
+
+
+
   // Re-insert formatted zero-width space when content is deleted but formatting is still active
   document.getElementById('content').addEventListener('input', () => {
     const contentDiv = document.getElementById('content');
