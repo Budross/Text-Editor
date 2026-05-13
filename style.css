@@ -30,7 +30,13 @@ div:focus {
   outline: none;
 }
 
-
+hr {
+  height: 5px;
+  border: none;
+  background-color: black;
+  display: block;
+  clear: both;
+}
 
 #heading {
   font-size: 48px;

@@ -242,6 +242,11 @@ function setupEventListeners() {
     toggleFormatting('italic');
   });
 
+  document.getElementById('hr-btn').addEventListener('click', () => {
+    const contentDiv = document.getElementById('content');
+    document.execCommand('insertHorizontalRule', false, null);
+  });
+
   // Header color picker
   const colorPicker = document.getElementById('header-color');
   colorPicker.addEventListener('input', (e) => changeHeaderColor(e.target.value));
