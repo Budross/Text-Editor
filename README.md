@@ -31,7 +31,7 @@ Try it out at budross.github.io/Text-Editor
 
 ## Getting Started
 
-1.  Clone or download the repository.
+1.  Clone or download the repository. Or visit budross.github.io/Text-Editor
 2.  Open `TextEditor.html` in any modern web browser.
 3.  Start typing! Your progress is saved automatically.
 
